@@ -9,7 +9,7 @@
 <div class="container">
     <div th:insert="~{fragments/general.html :: header}"></div>
     <h1>Lista de estudiantes</h1>
-    <a href="#">Nuevo Estudiante</a>
+    <a th:href="@{'/estudiante/new'}">Nuevo Estudiante</a>
     <table class="table">
         <thead>
         <tr>
@@ -28,7 +28,7 @@
             <td th:text="${estudiante.apellidos}">Mark</td>
             <td th:text="${estudiante.dni}">Mark</td>
             <td th:text="${estudiante.edad}">Mark</td>
-            <td><a href="#">Editar</a></td>
+            <td><a th:href="@{'/estudiante/edit'}">Editar</a></td>
         </tr>
         </tbody>
     </table>
