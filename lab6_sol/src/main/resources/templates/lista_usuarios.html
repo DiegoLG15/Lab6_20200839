@@ -28,7 +28,7 @@
             <td th:text="${estudiante.apellidos}">Mark</td>
             <td th:text="${estudiante.dni}">Mark</td>
             <td th:text="${estudiante.edad}">Mark</td>
-            <td><a th:href="@{'/estudiante/edit'}">Editar</a></td>
+            <td><a th:href="@{'/estudiante/edit'+ '?id=' + ${estudiante.id}}">Editar</a></td>
         </tr>
         </tbody>
     </table>
